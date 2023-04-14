@@ -1,6 +1,6 @@
 <!ELEMENT Publications (Article*)>
 <!ELEMENT Article (PubDetails)>
-<!ATTLIST Article PMID ID #REQUIRED>
+<!ATTLIST Article PMID CDATA #REQUIRED>
 <!ELEMENT PubDetails (Journal,ArticleTitle,AuthorList)>
 <!ELEMENT Journal (ISSN, JournalIssue, Title, ISOAbbreviation)>
 <!ELEMENT ISSN (#PCDATA)>
@@ -19,8 +19,9 @@
 <!ELEMENT ArticleTitle (#PCDATA)>
 <!ELEMENT AuthorList (Author+)>
 <!ATTLIST AuthorList CompleteYN CDATA #REQUIRED>
-<!ELEMENT Author (LastName, ForeName, Initials)>
+<!ELEMENT Author (LastName, ForeName, Initials, Suffix?)>
 <!ATTLIST Author ValidYN CDATA #REQUIRED>
 <!ELEMENT LastName (#PCDATA)>
 <!ELEMENT ForeName (#PCDATA)>
 <!ELEMENT Initials (#PCDATA)>
+<!ELEMENT Suffix (#PCDATA)>
