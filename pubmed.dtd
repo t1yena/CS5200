@@ -1,33 +1,26 @@
-<!DOCTYPE Publications [
-  <!ELEMENT Publications (Article*)>
-
+<!ELEMENT Publications (Article*)>
   <!ELEMENT Article (PubDetails)>
   <!ATTLIST Article PMID ID #REQUIRED>
-
-  <!ELEMENT PubDetails (Journal,ArticleTitle,AuthorList)>
-
-  <!ELEMENT Journal (ISSN, JournalIssue, Title, ISOAbbreviation)>
-  <!ELEMENT ISSN (#PCDATA)>
-  <!ATTLIST ISSN IssnType CDATA #REQUIRED>
-  <!ELEMENT JournalIssue (Volume, Issue, PubDate)>
-  <!ATTLIST JournalIssue CitedMedium CDATA #REQUIRED>
-  <!ELEMENT Volume (#PCDATA)>
-  <!ELEMENT Issue (#PCDATA)>
-  <!ELEMENT PubDate ((Year|MedlineDate), Month?, Day?)>
-  <!ELEMENT Year (#PCDATA)>
-  <!ELEMENT MedlineDate (#PCDATA)>
-  <!ELEMENT Month (#PCDATA)>
-  <!ELEMENT Day (#PCDATA)>
-  <!ELEMENT Title (#PCDATA)>
-  <!ELEMENT ISOAbbreviation (#PCDATA)>
-
-  <!ELEMENT Article Title (#PCDATA)>
-
-  <!ELEMENT AuthorList (Author+)>
-  <!ATTLIST AuthorList CompleteYN CDATA #REQUIRED>
-  <!ELEMENT Author (LastName, ForeName, Initials)>
-  <!ATTLIST Author ValidYN CDATA #REQUIRED>
-  <!ELEMENT LastName (#PCDATA)>
-  <!ELEMENT ForeName (#PCDATA)>
-  <!ELEMENT Initials (#PCDATA)>
-]>
+    <!ELEMENT PubDetails (Journal,ArticleTitle,AuthorList)>
+      <!ELEMENT Journal (ISSN, JournalIssue, Title, ISOAbbreviation)>
+        <!ELEMENT ISSN (#PCDATA)>
+        <!ATTLIST ISSN IssnType CDATA #REQUIRED>
+        <!ELEMENT JournalIssue (Volume, Issue, PubDate)>
+        <!ATTLIST JournalIssue CitedMedium CDATA #REQUIRED>
+          <!ELEMENT Volume (#PCDATA)>
+          <!ELEMENT Issue (#PCDATA)>
+          <!ELEMENT PubDate ((Year|MedlineDate), Month?, Day?)>
+            <!ELEMENT Year (#PCDATA)>
+            <!ELEMENT MedlineDate (#PCDATA)>
+            <!ELEMENT Month (#PCDATA)>
+            <!ELEMENT Day (#PCDATA)>
+        <!ELEMENT Title (#PCDATA)>
+        <!ELEMENT ISOAbbreviation (#PCDATA)>
+      <!ELEMENT Article Title (#PCDATA)>
+      <!ELEMENT AuthorList (Author+)>
+      <!ATTLIST AuthorList CompleteYN CDATA #REQUIRED>
+        <!ELEMENT Author (LastName, ForeName, Initials)>
+        <!ATTLIST Author ValidYN CDATA #REQUIRED>
+          <!ELEMENT LastName (#PCDATA)>
+          <!ELEMENT ForeName (#PCDATA)>
+          <!ELEMENT Initials (#PCDATA)>
