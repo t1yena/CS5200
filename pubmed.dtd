@@ -16,7 +16,7 @@
 <!ELEMENT Day (#PCDATA)>
 <!ELEMENT Title (#PCDATA)>
 <!ELEMENT ISOAbbreviation (#PCDATA)>
-<!ELEMENT Article Title (#PCDATA)>
+<!ELEMENT ArticleTitle (#PCDATA)>
 <!ELEMENT AuthorList (Author+)>
 <!ATTLIST AuthorList CompleteYN CDATA #REQUIRED>
 <!ELEMENT Author (LastName, ForeName, Initials)>
