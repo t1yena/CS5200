@@ -22,6 +22,7 @@
     <!ATTLIST AuthorList CompleteYN CDATA #REQUIRED>
       <!ELEMENT Author ((CollectiveName | (LastName, ForeName, Initials)), Suffix?, AffiliationInfo?)>
       <!ATTLIST Author ValidYN CDATA #REQUIRED>
+        <!ELEMENT CollectiveName (#PCDATA)>
         <!ELEMENT LastName (#PCDATA)>
         <!ELEMENT ForeName (#PCDATA)>
         <!ELEMENT Initials (#PCDATA)>
